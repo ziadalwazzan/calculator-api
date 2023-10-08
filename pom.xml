@@ -44,12 +44,26 @@
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-java</artifactId>
-			<version>7.11.2</version>
+			<version>6.1.1</version>
+			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-junit</artifactId>
 			<version>7.11.2</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-spring</artifactId>
+			<version>7.11.2</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>rest-assured</artifactId>
+			<version>5.3.2</version>
+			<scope>test</scope>
 		</dependency>
 	</dependencies>
 
@@ -86,7 +100,7 @@
 				<version>3.0.0-M5</version>
 				<configuration>
 					<includes>
-						<include>com/example/CalculatorApiApplicationTests.kt</include>
+						<include>com/example/**/*.kt</include>
 					</includes>
 				</configuration>
 			</plugin>
